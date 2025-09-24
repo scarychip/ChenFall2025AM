@@ -1,0 +1,100 @@
+body {
+background-color: #5E5D5D;
+background-image: url("images/greenbg.jpg");
+
+    margin: 0;
+    padding: 0;
+}
+
+/* id rule uses hashtag # */
+#wrapper{
+    
+    margin: 20px auto;
+    width: 80%;
+    background-color: #aeddb7a8;
+    padding: 30px 50px;
+    border-radius: 10px;
+ }
+
+main{
+    font-family: "Barlow Condensed", sans-serif;
+  font-weight: 400;
+  font-size: 25px;
+  font-style: normal;
+  padding: 0;
+    margin: 20px auto;
+    width: 80%;
+    background-color: #d7f5d9;
+    padding: 30px 50px;
+    border-radius: 10px;
+        border-block-style: solid;
+    border-block-color: #51885D;
+    
+blockquote{
+    font-size:small;
+}
+}
+
+#nav{
+    
+font-weight: 100;
+  font-style: normal;
+  font-size: 23px;
+  margin:10;
+  padding:0;
+    background-color: #d7f5d9;
+    border-radius: 10px;
+    text-align: center;
+        border-block-style: solid;
+    border-block-color: #51885D;
+}
+nav a:hover {
+color: #B7249E;
+text-decoration: underline;
+zoom: 120%;
+}
+
+/* class rules use a period  to make a rule about a class */
+
+.mushroom{
+    color: rgb#0E493B;
+    font-weight: 900;
+    font-style: italic;
+}
+.underline{
+    text-decoration-line: underline;
+}
+/*header h1 
+{
+  class rules use a period  to make a rule about a class */
+main p {
+font-size: 24px;
+line-height: 24px;
+}
+
+main table {
+    border: 18px solid #10645D;
+}
+
+main table td{
+    border: 5px solid #10645D;
+    background-color: #d7f5d9;
+}
+h1{
+    font-family: "Rubik Dirt", system-ui;
+  font-weight: 400;
+  font-size: 49px;
+  font-style: normal;
+}
+footer{
+   font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  font-style: italic;
+  margin:10;
+  padding:0;
+
+}
+/* why doesnt this work
+#h2{
+    text-align: center; 
+}
