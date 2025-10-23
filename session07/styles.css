@@ -1,0 +1,162 @@
+/* START border-box fix */
+html {
+  box-sizing: border-box;
+}
+/* asterisk (*) symbol represents the universal selector. Its primary function is to select all elements of any type within the document. */
+/* :before is a pseudo-element used to insert content before the actual content of a selected element. It creates a "virtual" first child within the element, allowing you to style and add content that isn't directly present in your HTML markup. */
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+/* END border-box fix */
+
+body {
+    background-color: rgb(255, 255, 255);
+}
+#wrapper {
+    margin: 0px auto;
+    /* centers the wrapper */
+    background-color: rgb(255, 255, 255);
+    max-width: 1000px;
+    border: solid 10px rgb(55, 33, 2);
+    display: flex;
+    flex-wrap: wrap;
+}
+/* Add padding to all of the #wrapper child elements */
+#wrapper>* {
+    padding: 20px;
+}
+header {
+    background: #D9B391;
+    order: 1;
+    flex: 1 0 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+main {
+    background: #A66844;
+    order: 3;
+    flex: 1 1 500px;
+}
+nav {
+    background: #733620;
+    order: 2;
+    flex: 1 0 200px;
+}
+aside {
+    background: #974c31;
+    order: 4;
+    flex: 1 0 200px;
+}
+footer {
+    background: #D9B391;
+    order: 5;
+    flex: 1 0 100%;
+}
+
+/* SUBSCRIBE BUTTON */
+div.buttonAbsolute {
+    background-color: rgb(255, 208, 0);
+    opacity: 1.0;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    width: 150px;
+    border-radius: 125px;
+    padding: 20px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 2;
+}
+/* view gallery button */
+div.buttonRelative {
+    background-color: rgb(255, 208, 0);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 20px;
+    width: 200px;
+    position: relative;
+    z-index: 3;
+    margin: auto;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+div.buttonNav{
+  box-shadow: 2px 4px 6px;
+   background-color: rgb(255, 208, 0);
+      color: rgb(0, 0, 0);
+      text-align: center;
+      padding: 10px;
+      width: 100%;
+      position: relative;
+      margin: 0;
+      border-radius: 5px;
+    z-index: 2;
+}
+nav a{
+  text-decoration: none;
+  color:brown;
+  font-family: "WDXL Lubrifont SC", sans-serif;
+  font-weight: 400;
+  
+}
+nav a:hover{
+  text-decoration: underline; 
+  color: rgb(255, 0, 0); 
+  transform: scale(1.2);
+  
+}
+h3{
+  color:#730202;
+  opacity: 75%;
+}
+.Genus{
+  text-decoration: #D93B18 wavy underline;
+}
+.Hypo{
+  text-decoration: underline #D9B391;
+}
+body {
+  background: url("images/bg.jpg");
+  background-attachment: fixed;
+}
+h1{
+  font-size: 70px;
+  color:#730202;
+  font-family: "Barriecito", system-ui;
+  font-weight: 500;
+  font-style: normal;
+}
+h2{
+  font-size: 25px;
+  font-family: "WDXL Lubrifont SC", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+}
+main{
+  
+  font-family: "WDXL Lubrifont SC", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+img{
+  box-shadow: 2px 4px 6px;
+}
+.zoom1 img{
+    display: block;
+    margin: 0 auto;                 
+    max-width: 100%;                
+    height: auto;
+}
+.zoom1 { 
+  
+  transition: transform .2s;       
+}
+.zoom1:hover {
+  transform: scale(1.1); 
+}
