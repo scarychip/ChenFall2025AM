@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ <title>Vivian Rock Climbing Final</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=BBH+Bogle&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sekuya&display=swap" rel="stylesheet">
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            // Toggle the slide effect
+            $(".toggle").on("click", function() {
+                $(this).next(".image-toggle").slideToggle("slow", onToggleFinished);
+            });
+        });
+        
+        function onToggleFinished() {
+            // the value of this is set to the DOM element being animated
+            console.log ("slideToggle complete on: " + this.id);
+        }
+    </script>
+<body>
+
+
+  <div class="wrapper">
+
+    <nav>
+      <a href="equipment.html" class="types">EQUIPMENTS</a>
+      <a href="index.html" class="types">ABOUT</a>
+      <a href="gallery.html" class="types">GALLERY</a>
+      <a href="game.html" class="types">GAME</a>
+      <a href="shopping.html" class="types">SHOP</a>
+    </nav>
+
+    <div class="header">
+      <div class="rock">
+        <h1>Gear</h1>
+      </div>
+      <div class="climbing">
+        <h1>Shop</h1>
+      </div>
+    </div>
+
+  <main>
+      <h2>Shop Our Gear!</h2>
+
+      <div class="product-list">
+
+        <!-- Product -->
+        <div class="product">
+          <img src="images/shoes2.jpg" >
+          <h3>Climbing Shoes</h3>
+          <p class="price">$99.99</p>
+
+          <button class="toggle">Show Examples</button>
+          <div class="image-toggle">
+            <div class="image-container">
+              <img src="images/shoes.jpg">
+              <img src="images/shoes3.jpg">
+              <img src="images/shoes2.jpg">
+            </div>
+          </div>
+        </div>
+
+  
+        <div class="product">
+          <img src="images/rope2.png" alt="Climbing Rope">
+          <h3>Climbing Rope</h3>
+          <p class="price">$120.00</p>
+
+          <button class="toggle">Show Examples</button>
+          <div class="image-toggle">
+            <div class="image-container">
+              <img src="images/rope.png">
+              <img src="images/rope2.png">
+            </div>
+          </div>
+        </div>
+
+        <div class="product">
+          <img src="images/chalk3.jpg" alt="Chalk Bag">
+          <h3>Chalk Bag</h3>
+          <p class="price">$19.99</p>
+
+          <button class="toggle">Show Examples</button>
+          <div class="image-toggle">
+            <div class="image-container">
+              <img src="images/chalk2.jpg">
+              <img src="images/chalk.png">
+              <img src="images/chalk3.jpg">
+            </div>
+          </div>
+        </div>
+
+      
+        <div class="product">
+          <img src="images/crashpad.jpg" alt="Crash Pad">
+          <h3>Crash Pad</h3>
+          <p class="price">$150.00</p>
+
+          <button class="toggle">Show Examples</button>
+          <div class="image-toggle">
+            <div class="image-container">
+              <img src="images/crashpad.jpg">
+              <img src="images/crashpad2.jpg">
+              <img src="images/crashpad3.jpg">
+            </div>
+          </div>
+        </div>
+
+       
+      
+
+      </div>
+    </main>
+
+  
+    <footer>
+      <h2>Sources</h2>
+      &copy; 2025 Vivian Chen
+      <p>
+        <a href="https://www.rei.com/learn/expert-advice/getting-started-rock-climbing.html#practice_skills">
+          Getting Started at Rock Climbing @ REI.com
+        </a>
+        <p><a href= "https://images.google.com/"> Google Images </a></p>
+      </p>
+    </footer>
+
+  </div>
+
+</body>
+</html>
